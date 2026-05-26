@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World</title>
+</head>
+<body>
+  <h1>Hello World from EC2</h1>
+
+  <script>
+    fetch('/hostname')
+      .then(r => r.text())
+      .then(t => document.getElementById('host').innerText = t)
+  </script>
+</body>
+</html>
